@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deporte</title>
+    <style>
+        body {
+            background-color: #e3ece4;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        .tabla-datos {
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 850px;
+        }
+        .tabla-datos th, .tabla-datos td {
+            border: 1px solid #a4bfa4;
+            padding: 10px;
+            text-align: left;
+        }
+        .tabla-datos th {
+            background-color: #cbdccb;
+        }
+        .tabla-videos {
+            border: none;
+            background-color: transparent;
+            width: 100%;
+            max-width: 850px;
+            margin-top: 20px;
+        }
+        .tabla-videos td {
+            border: none;
+            padding: 10px;
+            vertical-align: top;
+            width: 50%;
+        }
+        video {
+            display: block;
+            margin-top: 10px;
+            border: 1px solid #a4bfa4;
+            width: 100%;
+            height: auto;
+        }
+        button {
+            background-color: #cbdccb;
+            border: 1px solid #a4bfa4;
+            padding: 4px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Los deportes en Mexico</h1>
+    <p>El deporte en Mexico ha sido, a lo largo de su historia moderna, un reflejo de la pasion, la disciplina y el orgullo nacional. Disciplinas como el boxeo y el futbol no solo mueven multitudes,
+        sino que se han consolidado como pilares culturales que unen a las familias y comunidades. Desde las legendarias batallas sobre el cuadrilatero hasta los grandes torneos internacionales
+        ,los atletas mexicanos han llevado el nombre del pais a lo mas alto, convirtiendo el esfuerzo deportivo en una de las mayores fuentes de identidad y festejo popular.
+    </p>
+
+    <h3>Grandes Disciplinas de Orgullo Nacional</h3>
+    <table class="tabla-datos">
+        <thead>
+            <tr>
+                <th>Deporte</th>
+                <th>Icono Historico</th>
+                <th>Logros Principales y Records Destacados</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Boxeo</strong></td>
+                <td>Julio Cesar Chavez</td>
+                <td>
+                    Se consagro como el maximo campeon mundial con un record invicto de 89 peleas antes de su primera derrota<br>
+                    Logro ganar 5 titulos mundiales en 3 categorias de peso distintas<br>
+                    Posee el record de la mayor asistencia para una pelea de boxeo con 132,247 espectadores en el Estadio Azteca
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Futbol</strong></td>
+                <td>Javier Hernandez</td>
+                <td>
+                    Tricampeon de goleo con las Chivas del Guadalajara a sus 18 años<br>
+                    El Chicharito se mantiene como el maximo goleador historico de la Seleccion Mexicana<br>
+                    Campeon de titulos de liga y copas internacionales en los clubes de mayor prestigio de Europa (Real Madrid, Manchester United)
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Automovilismo</strong></td>
+                <td>Sergio "Checo" Perez</td>
+                <td>
+                    Se convirtio en el piloto mexicano mas exitoso en la historia de la Formula 1, acumulando victorias en circuitos urbanos emblematicos como Monaco y Azerbaiyan<br>
+                    Logro el subcampeonato mundial de pilotos de la Formula 1 en la temporada 2023 con el equipo Red Bull Racing<br>
+                    Posee el record nacional con mas de 35 podios acumulados en la maxima categoria del automovilismo mundial
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Golf</strong></td>
+                <td>Lorena Ochoa</td>
+                <td>
+                    Se consolido como la jugadora numero 1 del ranking mundial de la LPGA por 158 semanas consecutivas<br>
+                    Obtuvo 27 victorias oficiales en el circuito de la LPGA, incluyendo 2 campeonatos "Majors"<br>
+                    Fue ingresada al prestigioso Salon de la Fama del Golf Mundial en 2017 como la primera mexicana en lograrlo
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Atletismo</strong></td>
+                <td>Ana Gabriela Guevara</td>
+                <td>
+                    Conquisto la medalla de oro en los 400 metros planos durante el Campeonato Mundial de Atletismo en Paris 2003<br>
+                    Obtuvo la medalla de plata en los Juegos Olimpicos de Atenas 2004<br>
+                    Domino el circuito mundial ganando de forma consecutiva la prestigiosa Liga de Oro de la IAAF
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Beisbol</strong></td>
+                <td>Fernando Valenzuela</td>
+                <td>
+                    Gano el premio Cy Young y el premio al Novato del Año de la Liga Nacional en la misma temporada (1981)<br>
+                    Conquisto 2 campeonatos de la Serie Mundial con los Dodgers de Los Angeles (1981 y 1988)<br>
+                    Lanzo un juego sin hits ni carreras en las Grandes Ligas en la temporada de 1990 contra los Cardenales
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Hitos Historicos del Deporte Mexicano</h3>
+    <ol>
+        <li>La consolidacion de Julio Cesar Chavez como el maximo campeon mundial en los cuadrilateros</li>
+        <li>La historica organizacion de las Copas del Mundo de la FIFA en 1970 y 1986</li>
+        <li>Mexico campeon de mundo sub-20 y medallista de oro olimpico en Londres 2012</li>
+    </ol>
+
+    <table class="tabla-videos">
+        <tr>
+            <td>
+                <h3>Momentos de gloria</h3>
+                <video controls>
+                    <source src="videos/Deporte MX.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproduccion de este video.
+                </video>
+            </td>
+            <td>
+                <h3>Liga MX Core</h3>
+                <video controls>
+                    <source src="videos/LigaMX Core.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproduccion de este video.
+                </video>
+            </td>
+        </tr>
+    </table><br>
+
+    <button><a href="mexico.html">Regresar</a></button>
+</body>
+</html>
