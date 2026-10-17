@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Proyectos</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent: #00ffcc;
+            --text: #c9d1d9;
+            --text-bright: #ffffff;
+            --border: #30363d;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 8px 32px rgba(0, 255, 204, 0.05);
+        }
+        h1 {
+            color: var(--text-bright);
+            text-align: center;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        ol {
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            margin: 15px 0;
+        }
+        li a {
+            display: block;
+            padding: 14px 20px;
+            background-color: #21262d;
+            color: var(--text-bright);
+            text-decoration: none;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        li a:hover {
+            transform: translateX(8px);
+            background-color: #30363d;
+            box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Estos son todos mis proyectos</h1>
+        <ol>
+            <li><a href="imagen.html">1. Voy a ver una imagen</a></li>
+            <li><a href="video.html">2. Voy a ver un video</a></li>
+            <li><a href="audio.html">3. Voy a oir un audio</a></li>
+            <li><a href="lista.html">4. Voy a ver una lista</a></li>
+            <li><a href="tabla.html">5. Voy a una tabla</a></li>
+            <li><a href="tabla_periodica.html">6. Voy a ver la tabla periodica</a></li>
+            <li><a href="horario.html">7. Voy a ver mi horario</a></li>
+        </ol>
+    </div>
+</body>
+</html>

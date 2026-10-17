@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horario</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --container-bg: #283c6b;
+            --text-muted: #e0e6e9;
+            --accent-color: #e0e6e9;
+            --border-color: #334155;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .table-container {
+            background-color: var(--container-bg);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 1000px;
+            overflow-x: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px 8px;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #0f172a;
+            color: var(--accent-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        th.hours-col {
+            width: 10%;
+            color: var(--text-muted);
+        }
+        td.hour-label {
+            background-color: #111827;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+        .aplicaciones-mat { background-color: rgba(212, 14, 14, 0.562); color: #6b1313; font-weight: 600; }
+        .matematica { background-color: rgba(56, 191, 248, 0.521); color: #06425c; font-weight: 600; }
+        .energia { background-color: rgba(39, 212, 16, 0.493); color: #11701d; font-weight: 600; }
+        .web-construye { background-color: rgba(169, 85, 247, 0.5); color: #3e1366; font-weight: 600; }
+        .web-implementa { background-color: rgba(241, 57, 149, 0.514); color: #8b1751; font-weight: 600; }
+        .historia { background-color: rgba(16, 185, 129, 0.5); color: #165c44; font-weight: 600; }
+        .ingles { background-color: rgba(252, 255, 74, 0.521); color: #888a19; font-weight: 600; }
+        .socioemocional { background-color: rgba(238, 153, 74, 0.521); color: #6d4118; font-weight: 600; }
+
+        td:empty {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .btn-nav {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background-color: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn-nav:hover {
+            background-color: var(--accent);
+            color: var(--bg-color);
+            box-shadow: 0 0 15px var(--accent);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="table-container">
+    <h2>Horario Grupal - Turno Matutino (5AMP Programacion)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th class="hours-col">Horas</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="hour-label">7 - 8</td>
+                <td rowspan="2" class="aplicaciones-mat">APLICACIONES DEL PENSAMIENTO MATEMATICO</td>
+                <td rowspan="2" class="energia">LA ENERGIA EN LOS PROCESOS DE LA VIDA DIARIA</td>
+                <td></td>
+                <td rowspan="2" class="energia">LA ENERGIA EN LOS PROCESOS DE LA VIDA DIARIA</td>
+                <td class="socioemocional">AMBITO DE FORMACION SOCIOEMOCIONAL V: ACTIVIDADES ARTISTICAS Y CULTURALES</td>
+            </tr>
+            <tr>
+                <td class="hour-label">8 - 9</td>
+                <td rowspan="2" class="web-implementa">IMPLEMENTA APLICACIONES WEB</td>
+                <td rowspan="2" class="web-construye">CONSTRUYE APLICACIONES WEB</td>
+            </tr>
+            <tr>
+                <td class="hour-label">9 - 10</td>
+                <td class="matematica">TEMAS SELECTOS DE MATEMATICAS II</td>
+                <td class="historia">CONCIENCIA HISTORICA II: MEXICO DURANTE EL EXPANSIONISMO CAPITALISTA</td>
+                <td rowspan="2" class="historia">CONCIENCIA HISTORICA II: MEXICO DURANTE EL EXPANSIONISMO CAPITALISTA</td>
+            </tr>
+            <tr>
+                <td class="hour-label">10 - 11</td>
+                <td rowspan="2" class="web-construye">CONSTRUYE APLICACIONES WEB</td>
+                <td class="web-implementa">IMPLEMENTA APLICACIONES WEB</td>
+                <td rowspan="2" class="ingles">INGLES V</td>
+                <td rowspan="2" class="web-implementa">IMPLEMENTA APLICACIONES WEB</td>
+            </tr>
+            <tr>
+                <td class="hour-label">11 - 12</td>
+                <td rowspan="3" class="web-construye">CONSTRUYE APLICACIONES WEB</td>
+                <td class="aplicaciones-mat">APLICACIONES DEL PENSAMIENTO MATEMATICO</td>
+            </tr>
+            <tr>
+                <td class="hour-label">12 - 13</td>
+                <td rowspan="2" class="ingles">INGLES V</td>
+                <td rowspan="2" class="matematica">TEMAS SELECTOS DE MATEMATICAS II</td>
+                <td class="socioemocional">AMBITO DE FORMACION SOCIOEMOCIONAL V: ACTIVIDADES ARTISTICAS Y CULTURALES</td>
+                <td rowspan="2" class="matematica">TEMAS SELECTOS DE MATEMATICAS II</td>
+            </tr>
+            <tr>
+                <td class="hour-label">13 - 14</td>
+                <td class="ingles">INGLES V</td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="text-align: center;">
+            <a href="index.html" class="btn-nav">voy a la pagina principal</a>
+    </div>
+</div>
+
+</body>
+</html>

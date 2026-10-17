@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent: #00ffcc;
+            --text: #c9d1d9;
+            --text-bright: #ffffff;
+            --border: #30363d;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text);
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 30px;
+            max-width: 650px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 { color: var(--text-bright); text-transform: uppercase; border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        .img-box {
+            margin: 25px 0;
+            padding: 10px;
+            background: #21262d;
+            border-radius: 8px;
+            border: 1px dashed var(--accent);
+        }
+        img { max-width: 100%; height: auto; border-radius: 4px; }
+        .btn-nav {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-nav:hover { background-color: var(--accent); color: var(--bg-color); box-shadow: 0 0 15px var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Imagen</h1>
+        <p>voy a poner una imagen</p>
+        <div class="img-box">
+            <img src="papachuca.jpg" alt="Tu imagen aqui">
+            <p>es una imagen</p>
+        </div>
+        <a href="index.html" class="btn-nav">voy a la pagina principal</a>
+    </div>
+</body>
+</html>
