@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Cultura e Historia de México</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">México Cultural</a>
+
+    <div class="nav-links">
+      <a href="centro.html" class="active">Inicio</a>
+      <a href="independencia.html">Independencia</a>
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle" aria-haspopup="true">Entretenimiento ▾</a>
+        <div class="dropdown-menu">
+          <a href="cine.html">Cine</a>
+          <a href="television.html">Televisión</a>
+        </div>
+      </div>
+      <a href="musica.html">Música</a>
+      <a href="deportes.html">Deportes</a>
+      <a href="gastronomia.html">Gastronomía</a>
+      <a href="marcas.html">Marcas</a>
+      <a href="logros.html">Grandes Logros</a>
+    </div>
+
+    <div class="user-controls">
+      <span id="saludoUsuario" class="user-greeting">Hola, Visitante</span>
+      <a href="index.html" id="btnCerrarSesion" class="btn-logout">Cerrar sesión</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="hero-banner">
+      <h1>Cultura e Historia de México</h1>
+      <p>Bienvenido a nuestro portal interactivo dedicado a preservar y difundir las raíces, el arte, los íconos y los momentos históricos que definen la identidad del pueblo mexicano.</p>
+    </header>
+
+    <section class="welcome-box">
+      <h2>¿Qué encontrarás en este sitio?</h2>
+      <p>Utiliza el menú de navegación en la parte superior para explorar cada una de nuestras secciones temáticas: desde el movimiento de Independencia y los grandes logros científicos y artísticos de México, hasta nuestra riqueza musical, deportiva, televisiva y cinematográfica.</p>
+    </section>
+
+    <h2>Explora el portal</h2>
+    <div class="grid-3">
+      <a class="quick-card" href="independencia.html"><strong>Independencia</strong><span>Cronología, héroes y video explicativo.</span></a>
+      <a class="quick-card" href="entretenimiento.html"><strong>Entretenimiento</strong><span>Televisión y cine de la Época de Oro.</span></a>
+      <a class="quick-card" href="musica.html"><strong>Música</strong><span>Artistas por década y canciones populares.</span></a>
+      <a class="quick-card" href="deportes.html"><strong>Deportes</strong><span>Íconos, récords y momentos de gloria.</span></a>
+      <a class="quick-card" href="gastronomia.html"><strong>Gastronomía</strong><span>Sabores, platillos y tradición culinaria.</span></a>
+      <a class="quick-card" href="marcas.html"><strong>Marcas</strong><span>Las grandes empresas mexicanas por sector.</span></a>
+      <a class="quick-card" href="logros.html"><strong>Grandes Logros</strong><span>Ciencia, arte, gastronomía y marcas.</span></a>
+    </div>
+
+    <h2>Postales de México</h2>
+    <div class="grid-galeria">
+      <div class="person-card"><img src="imagenes/zocalo.png" alt="Ciudad de México"><p>Ciudad de México</p></div>
+      <div class="person-card"><img src="imagenes/relojPH.png" alt="Hidalgo"><p>Hidalgo</p></div>
+      <div class="person-card"><img src="imagenes/cancun.png" alt="Yucatán"><p>Yucatán</p></div>
+      <div class="person-card"><img src="imagenes/cerroSilla.png" alt="Nuevo Leon"><p>Nuevo Leon</p></div>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <strong>México Cultural</strong> · Cultura e Historia de México — raíces, arte, música, deporte y orgullo nacional.
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

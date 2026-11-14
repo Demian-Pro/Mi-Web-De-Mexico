@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Música Mexicana</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">México Cultural</a>
+
+    <div class="nav-links">
+      <a href="centro.html">Inicio</a>
+      <a href="independencia.html">Independencia</a>
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle" aria-haspopup="true">Entretenimiento ▾</a>
+        <div class="dropdown-menu">
+          <a href="cine.html">Cine</a>
+          <a href="television.html">Televisión</a>
+        </div>
+      </div>
+      <a href="musica.html" class="active">Música</a>
+      <a href="deportes.html">Deportes</a>
+      <a href="gastronomia.html">Gastronomía</a>
+      <a href="marcas.html">Marcas</a>
+      <a href="logros.html">Grandes Logros</a>
+    </div>
+
+    <div class="user-controls">
+      <span id="saludoUsuario" class="user-greeting">Hola, Visitante</span>
+      <a href="index.html" id="btnCerrarSesion" class="btn-logout">Cerrar sesión</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="hero-header">
+      <h1>Música Mexicana</h1>
+      <p>La música en México ha influido profundamente en la construcción de la identidad nacional, funcionando como un reflejo directo de su historia, sus luchas y el mestizaje cultural. Desde los ritmos tradicionales hasta los géneros modernos, las composiciones de los autores de nuestro país sirven para preservar tradiciones y narrar la vida cotidiana de las distintas épocas. Por esta razón, la expresión musical es considerada uno de los pilares fundamentales de la cultura de México, unificando al pueblo y llevando su riqueza artística ante los ojos del mundo entero.</p>
+    </header>
+
+    <h2>Artistas dominantes por década (1970 - Actualidad)</h2>
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Década</th>
+            <th>Artistas Musicales Dominantes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Años 1970</strong></td><td>José José, Los Tigres del Norte, Los Bukis</td></tr>
+          <tr><td><strong>Años 1980</strong></td><td>José José, Juan Gabriel, Vicente Fernández</td></tr>
+          <tr><td><strong>Años 1990</strong></td><td>Luis Miguel, Maná, Cristian Castro</td></tr>
+          <tr><td><strong>Años 2000</strong></td><td>Reik, Belanova, Julieta Venegas</td></tr>
+          <tr><td><strong>Años 2010</strong></td><td>Los Ángeles Azules, Banda MS, Natalia Lafourcade</td></tr>
+          <tr><td><strong>Años 2020 (Actualidad)</strong></td><td>Peso Pluma, Christian Nodal, Carín León</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Canciones más populares</h2>
+    <div class="grid-3">
+      <div class="audio-card">
+        <h3>Los Tigres del Norte (1970)</h3>
+        <p>¿Qué tal si eres tú?</p>
+        <audio controls src="audio/que tal si eres tu.mp3"></audio>
+      </div>
+      <div class="audio-card">
+        <h3>Juan Gabriel (1980)</h3>
+        <p>El Noa Noa</p>
+        <audio controls src="audio/el noa noa.mp3"></audio>
+      </div>
+      <div class="audio-card">
+        <h3>Luis Miguel (1990)</h3>
+        <p>Mucho Corazón</p>
+        <audio controls src="audio/mucho corazon.mp3"></audio>
+      </div>
+      <div class="audio-card">
+        <h3>Reik (2000)</h3>
+        <p>Yo quisiera</p>
+        <audio controls src="audio/yo quisiera.mp3"></audio>
+      </div>
+      <div class="audio-card">
+        <h3>Banda MS (2010)</h3>
+        <p>A lo mejor</p>
+        <audio controls src="audio/alomejor.mp3"></audio>
+      </div>
+      <div class="audio-card">
+        <h3>Grupo Frontera (2020)</h3>
+        <p>Bebé dame</p>
+        <audio controls src="audio/bebe dame.mp3"></audio>
+      </div>
+    </div>
+
+    <h2>Voces que marcaron época</h2>
+    <div class="grid-galeria">
+      <div class="person-card"><img src="imagenes/joseJose.png" alt="José José"><p>José José</p></div>
+      <div class="person-card"><img src="imagenes/PedroIN.png" alt="Pedro Infante"><p>Pedro Infante</p></div>
+      <div class="person-card"><img src="imagenes/vicenteFrnz.png" alt="Vicente Fernández"><p>Vicente Fernández</p></div>
+      <div class="person-card"><img src="imagenes/LuisMi.png" alt="Luis Miguel"><p>Luis Miguel</p></div>
+    </div>
+
+    <a href="centro.html" class="btn-regresar">← Regresar</a>
+  </div>
+
+  <footer class="site-footer">
+    <strong>México Cultural</strong> · Cultura e Historia de México — raíces, arte, música, deporte y orgullo nacional.
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

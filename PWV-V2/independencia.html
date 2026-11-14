@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Independencia de México</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">México Cultural</a>
+
+    <div class="nav-links">
+      <a href="centro.html">Inicio</a>
+      <a href="independencia.html" class="active">Independencia</a>
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle" aria-haspopup="true">Entretenimiento ▾</a>
+        <div class="dropdown-menu">
+          <a href="cine.html">Cine</a>
+          <a href="television.html">Televisión</a>
+        </div>
+      </div>
+      <a href="musica.html">Música</a>
+      <a href="deportes.html">Deportes</a>
+      <a href="gastronomia.html">Gastronomía</a>
+      <a href="marcas.html">Marcas</a>
+      <a href="logros.html">Grandes Logros</a>
+    </div>
+
+    <div class="user-controls">
+      <span id="saludoUsuario" class="user-greeting">Hola, Visitante</span>
+      <a href="index.html" id="btnCerrarSesion" class="btn-logout">Cerrar sesión</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="hero-header">
+      <h1>Independencia de México</h1>
+      <p>La Independencia de México fue un proceso político y militar que comenzó en 1810 con el objetivo de romper el dominio español sobre el territorio de la Nueva España. Esta lucha transformó profundamente la identidad nacional y marcó el nacimiento de una república soberana que, décadas más tarde, tuvo que defender su recién ganada libertad frente a las ambiciones imperiales de Francia durante el siglo XIX.</p>
+    </header>
+
+    <h2>Cronología Histórica</h2>
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Año / Fecha</th>
+            <th>Acontecimiento Histórico</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>1810 (16 sep)</strong></td><td>Miguel Hidalgo lidera el Grito de Dolores, dando inicio formal a la Guerra de Independencia.</td></tr>
+          <tr><td><strong>1811 (30 jul)</strong></td><td>Fusilamiento y muerte de Miguel Hidalgo en Chihuahua. El movimiento insurgente continúa bajo otros líderes.</td></tr>
+          <tr><td><strong>1821 (27 sep)</strong></td><td>El Ejército Trigarante entra victorioso a la Ciudad de México y se consuma de manera oficial la Independencia.</td></tr>
+          <tr><td><strong>1822 (21 jul)</strong></td><td>Inicio del periodo imperial de Agustín de Iturbide al ser coronado oficialmente como Emperador de México.</td></tr>
+          <tr><td><strong>1829 (1 abr)</strong></td><td>Inicio de la gestión presidencial de Vicente Guerrero como el segundo presidente constitucional del país.</td></tr>
+          <tr><td><strong>1862 (5 may)</strong></td><td>Comienza la Segunda Intervención Francesa; el ejército mexicano derrota a las tropas de Napoleón III en la Batalla de Puebla.</td></tr>
+          <tr><td><strong>1867 (19 jun)</strong></td><td>Fusilamiento del emperador Maximiliano de Habsburgo, consolidando el triunfo de la República y el fin definitivo de la invasión francesa.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Héroes de la Independencia</h2>
+    <div class="grid-galeria">
+      <div class="person-card"><img src="imagenes/MiguelHgo.png" alt="Miguel Hidalgo"><p>Miguel Hidalgo</p></div>
+      <div class="person-card"><img src="imagenes/IgnacioA.png" alt="Ignacio Allende"><p>Ignacio Allende</p></div>
+      <div class="person-card"><img src="imagenes/VicenteG.png" alt="Vicente Guerrero"><p>Vicente Guerrero</p></div>
+      <div class="person-card"><img src="imagenes/JosefaOD.png" alt="Josefa Ortiz"><p>Josefa Ortiz</p></div>
+      <div class="person-card"><img src="imagenes/AgustinI.png" alt="Agustín de Iturbide"><p>Agustín de Iturbide</p></div>
+      <div class="person-card"><img src="imagenes/JMYP.png" alt="José María Morelos"><p>José María Morelos</p></div>
+    </div>
+
+    <h2>Una breve explicación</h2>
+    <div class="grid-2">
+      <div class="media-card">
+        <h3>La Independencia en pocos minutos</h3>
+        <video controls preload="metadata" src="videos/IDPMX.mp4"></video>
+      </div>
+    </div>
+
+    <h2>Himno Nacional Mexicano</h2>
+    <div class="audio-card audio-single">
+      <h3>Himno Nacional</h3>
+      <p>Versión instrumental</p>
+      <audio controls src="audio/himno nacional.mp3"></audio>
+    </div>
+
+    <a href="index.html" class="btn-regresar">← Regresar</a>
+  </div>
+
+  <footer class="site-footer">
+    <strong>México Cultural</strong> · Cultura e Historia de México — raíces, arte, música, deporte y orgullo nacional.
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
